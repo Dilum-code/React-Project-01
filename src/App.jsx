@@ -31,6 +31,10 @@ function App() {
           <menu>
             {/* <TabButton>Components</TabButton> */}
             <TabButton label='Components'></TabButton>
+            <TabButton label='JSX'></TabButton>
+            <TabButton label='Props'></TabButton>  
+            <TabButton label='State'></TabButton>
+
 
           </menu>
 
