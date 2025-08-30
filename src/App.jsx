@@ -1,5 +1,7 @@
 import reactImg from './assets/react-core-concepts.png';
 import componentsImg from './assets/components.png';
+import { CORE_CONCEPTS } from './data.js';
+
 
 const reatDescriptions = ['Fundermental','Crucial','Core'];
 
@@ -40,19 +42,15 @@ function App() {
         <h2>{CoreConcept}</h2>
         <ul>
           <CoreConcept
-            title="Components"
-            img={componentsImg}
-            description="Components are the building blocks of any React app and a typical React app will have many of these."
+            title={CORE_CONCEPTS[0].title }
+            img={CORE_CONCEPTS[0].image}
+            description={CORE_CONCEPTS[0].description}
           />
-          <CoreConcept
-            title="Components"
-            img={componentsImg}
-            description="Components are the building blocks of any React app and a typical React app will have many of these."
+          <CoreConcept {...CORE_CONCEPTS[1]}
           />
-          <CoreConcept
-            title="Components"
-            img={componentsImg}
-            description="Components are the building blocks of any React app and a typical React app will have many of these."
+          <CoreConcept {...CORE_CONCEPTS[2]}
+          />
+           <CoreConcept {...CORE_CONCEPTS[3]}
           />
         </ul>
         </section>
