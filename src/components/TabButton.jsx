@@ -5,7 +5,10 @@
 // }
 
 export default function TabButton({label}){
+    function handleClick(){
+        console.log('Hello World!');
+    }
     return (
-        <button>{label}</button>
+        <button onClick={handleClick}>{label}</button>
     );
 }
